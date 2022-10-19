@@ -1,0 +1,605 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Ubuntu', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*reset dos navegadores*/
+
+
+
+body{
+    background-color: #efefef
+}
+
+main{
+    background-color: #efefef;
+    width: 100vw;
+    max-width: 820px;
+    display: flex;
+    margin: 0 auto;
+}
+
+main .posts{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    height: 60px;
+    width: 100vw;
+    border-bottom: solid 1px #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffff
+    ;
+}
+
+.logo{
+    width: 103px;
+    height: 29px;
+    object-fit: cover;
+}
+
+.botao_pesquisa{
+    width: 200px;
+    height: 38px;
+    background-color: #efefef;
+    padding: 0 26px;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+.botao_pesquisa:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.search-outline{
+    position: absolute;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa ion-icon{
+    position: absolute;
+    padding-left: 5px;
+    color: #979797;
+}
+
+input::placeholder{
+    color: #9fadb6;
+}
+
+.menuzinho{
+    display: flex;
+
+}
+
+.menuzinho ion-icon, .icone_usuario{
+    font-size: 26px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icone_usuario{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #979797;
+    object-fit: cover;
+}
+
+.espaco{
+    height: 36px;
+    width: 100%;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Stories{
+    display: flex;
+    align-items: center;
+    width: 470px;
+    height: 120px;
+    background-color: white;
+    border-bottom: solid 1px #979797;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Stories_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.img_stories{
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: double 2.5px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #FFC000,#FF2B43,#D300C5 );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+}
+
+
+.Wrap_Stories{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+
+.nomes{
+    font-size: 12px;
+    color: #979797;
+    margin-top: 5px;
+}
+
+#btn{
+    position: relative;
+    right: 10px;
+    margin: auto 0;
+    z-index: 1000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.postagem{
+    width: 470px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: solid 0.2px #9797976a;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cabecalho{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.autor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    width: 430px;
+}
+
+.cabecalho .picautor{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: double 2.5px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #FFC000,#FF2B43,#D300C5 );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cabecalho ion-icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.imgcount{
+    width: 470px;
+    
+}
+
+.interations{
+    padding: 0px 12px 6px 12px;
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.curtidas ion-icon{
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    visibility: visible;
+}
+
+.interations ion-icon{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.ComentAmigo{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    gap: 10px;
+}
+
+.ComentAmigo p{
+    font-size: 14px;
+}
+
+.ComentAmigo img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ComentAmigo p span{
+    font-weight: 560;
+    cursor: pointer;
+}
+
+.coment p {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+    
+}
+
+.coment p:first-child{
+    margin-top: 10px;
+}
+
+.coment  p:nth-child(2){
+    color: #919191;
+    cursor: pointer;
+}
+
+.coment  p:last-child{
+    color: #979797;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.coment  span{
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.subimit ion-icon{
+    font-size: 24px;
+    margin: 0px 10px 0px 16px;
+    cursor: pointer;
+}
+
+.subimit input{
+    border: 0;
+}
+
+.subimit input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.subimit{
+    display: flex;
+    align-items: center;
+}
+
+.enviarcoment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 470px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: solid 0.2px #9797976a;
+}
+
+.espaçousuario{
+    width: 319px;
+    height: 465px;
+    margin-left: 20px;
+}
+
+.User{
+    display: flex;
+    align-items: center;
+    height: 66px;
+    margin-top: 42px;
+}
+
+.Usuarios{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.enviarcoment .change{
+    margin-right: 16px;
+}
+
+.Pic{
+    width: 66px;
+    height: 66px;
+}
+
+.PicUser{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.informations p {
+    font-size: 14px;
+    width: 217px;
+    margin: 0;
+}
+
+.change {
+    font-size: 12px;
+    color: #0095f6;
+    cursor: pointer;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.informations .nomezin{
+    cursor: pointer;
+    font-weight: bold
+}
+
+.informations .aroba{
+    color: #9b9b9b;
+}
+
+.mudar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.sugestoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sugestoes p:first-child{
+    font-size: 14px;
+    color: #919191;
+}
+
+.sugestoes p:last-child{
+    font-size: 12px;
+}
+
+.img_sugestions{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.nomes_sugestions{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.people p:last-child{
+    font-size: 12px;
+    color: #919191
+}
+
+.people{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.recomend{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.direitos p {
+    font-size: 12px;
+    color: #c7c7c7;
+    margin-top: 25px;
+    width: 320px;
+    word-break: break-all;
+}
+
+.direitos span{
+    cursor: pointer;
+}
+
+.direitos span:hover{
+    border-bottom: 0.5px solid #c7c7c7;
+}
+
+.curtida{
+    color: red;
+    visibility: visible;
+}
+
+@media screen and (max-width:640px) {
+    .pesquisa{
+        display: none;
+    }
+
+    .logo{
+        float: left;
+    }
+
+    .susgestiones, .espaçousuario{
+        display: none;
+    }
+
+    .Stories, .postagem, .enviarcoment, .imgcount{
+        width: 95vw;
+
+    }
+
+    main{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .menuzinho ion-icon, .icone_usuario{
+        font-size: 26px;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+
+}
