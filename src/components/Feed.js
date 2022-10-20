@@ -4,8 +4,8 @@ import Post from "./Post";
 import green from "../Imagens/grenjow.jpg"
 import greenprofile from "../Imagens/grenprofile.jpg"
 import halibelpic from "../Imagens/halibelprofile.jpg"
-import yoruichi from "../Imagens/yoruichi.jpg"
-import yoru from "../Imagens/yoru.jfif"
+import aizen from "../Imagens/Ainzen.jpg"
+import aizenprofile from "../Imagens/aizenprofile.jpg"
 import urohara from '../Imagens/urohara.jpg'
 import uryu from '../Imagens/uryu.jpg'
 import yasutora from '../Imagens/yasutora.jpg'
@@ -30,9 +30,9 @@ export default function Feed(){
 
         {
         autor: "Yoruichi",
-        fotoAutor: yoruichi,
+        fotoAutor: aizenprofile,
         tipoConteudo: "imagem",
-        conteudo: yoru,
+        conteudo: aizen,
         descricao: "Segura o look da mãe 😎.",
         amigo: "Urohara",
         curtidaAmigo: "Curtido por <span>Urohara</span> e <span>outras pessoas<span>",
