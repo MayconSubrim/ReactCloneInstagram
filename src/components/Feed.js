@@ -42,6 +42,8 @@ export default function Feed(){
 
         },
 
+
+        //
         {
         autor: "Yasutora",
         fotoAutor: yasutora,
