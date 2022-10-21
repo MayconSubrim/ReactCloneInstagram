@@ -29,15 +29,15 @@ export default function Feed(){
         },
 
         {
-        autor: "Yoruichi",
+        autor: "Souske",
         fotoAutor: aizenprofile,
         tipoConteudo: "imagem",
         conteudo: aizen,
-        descricao: "Segura o look da mãe 😎.",
+        descricao: "A vingança é um prato que se come frio.",
         amigo: "Urohara",
         curtidaAmigo: "Curtido por <span>Urohara</span> e <span>outras pessoas<span>",
         fotoCurtidaAmigo: urohara,
-        comentario: "Minha gatinha <3",
+        comentario: "mas as vezes e tão quente quanto um prato de sopa 🤭",
         tempo: "HÁ 13 DIAS"
 
         },
